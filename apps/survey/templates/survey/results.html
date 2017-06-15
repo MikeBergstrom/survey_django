@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h4>Thanks for submitting this form! You have submitted this form {{request.session.counter}} times now.</h4>
+    <div id="resultbox">
+        <h4> Submitted Information</h4>
+        Name: {{request.session.name}}
+        Dojo Location: {{request.session.location}}
+        Favorite Language: {{request.session.language}}
+        Comment: {{request.session.comment}}
+</body>
